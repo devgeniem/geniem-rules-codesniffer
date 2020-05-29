@@ -8,26 +8,26 @@ Extends WordPress, WordPress-Docs, WordPress-Extra, and others, but makes some c
 
 Adds to the mix some of our own rules:
 
-- Geniem.ControlStructures.ElseCatchNewline
+- `Geniem.ControlStructures.ElseCatchNewline`
   - Make else and catch blocks to start from new line
 
 ## Installation
 
 ```
 composer config repositories.devgeniem/geniem-rules-codesniffer git git@github.com:devgeniem/geniem-rules-codesniffer.git
-composer require --dev `devgeniem/geniem-rules-codesniffer`
+composer require --dev devgeniem/geniem-rules-codesniffer
 ```
 
 ## Usage
 
-Use `vendor/bin/local-phpcs` to make sure you are using the `phpcs` command from this package.
+Use `vendor/bin/phpcs --standard=Geniem app/` to make sure you are using the `phpcs` command from this package.
 
 You could add to your project `composer.json` file the following:
 
 ```json
 {
   "scripts": {
-      "lint": "local-phpcs"
+      "lint": "vendor/bin/phpcs --standard=Geniem app/"
   }
 }
 ```
