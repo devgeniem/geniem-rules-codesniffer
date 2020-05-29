@@ -1,0 +1,45 @@
+{
+  "name": "devgeniem/geniem-rules-codesniffer",
+  "description": "Geniem Oy (WordPress) CodeSniffer Rules",
+  "type": "phpcodesniffer-standard",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Contributors",
+      "homepage": "https://github.com/devgeniem/geniem-rules-codesniffer/graphs/contributors"
+    }
+  ],
+  "bin": [
+    "bin/local-phpcs"
+  ],
+  "keywords": [
+    "tooling",
+    "phpcs",
+    "standards",
+    "WordPress"
+  ],
+  "config": {
+    "sort-packages": true,
+    "preferred-install": "dist"
+  },
+  "scripts": {
+    "install-codestandards": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+    "phpcs": "bin/local-phpcs"
+  },
+  "require": {
+    "php": ">=7.3",
+    "automattic/vipwpcs": "^2.0",
+    "composer/installers": "^v1.7.0",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+    "phpcompatibility/php-compatibility": "^9.3",
+    "squizlabs/php_codesniffer": "^3.5.5",
+    "wp-coding-standards/wpcs": "^2.3"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ]
+}
