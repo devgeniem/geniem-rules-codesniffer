@@ -20,14 +20,14 @@ composer require --dev devgeniem/geniem-rules-codesniffer
 
 ## Usage
 
-Use `vendor/bin/phpcs --standard=Geniem app/` to make sure you are using the `phpcs` command from this package.
+Use `vendor/bin/phpcs --standard=Geniem web/app/ config/` to make sure you are using the `phpcs` command from this package.
 
 You could add to your project `composer.json` file the following:
 
 ```json
 {
   "scripts": {
-      "lint": "vendor/bin/phpcs --standard=Geniem app/"
+      "lint": "vendor/bin/phpcs --standard=Geniem web/app/ config/"
   }
 }
 ```

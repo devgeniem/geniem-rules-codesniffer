@@ -6,9 +6,6 @@
 
     <file>.</file>
 
-    <!-- This is our test data set, require-dev stuff gets installed here. -->
-    <!--<exclude-pattern>/test-data/</exclude-pattern>-->
-
     <rule ref="Geniem"/>
 
     <!-- Exclude Composer vendor directory. -->

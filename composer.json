@@ -25,6 +25,7 @@
   },
   "scripts": {
     "install-codestandards": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+    "lint": "bin/local-phpcs",
     "phpcs": "bin/local-phpcs"
   },
   "require": {
@@ -36,7 +37,19 @@
     "squizlabs/php_codesniffer": "^3.5.5",
     "wp-coding-standards/wpcs": "^2.3"
   },
+  "autoload": {
+    "psr-4": {"Geniem\\": "Geniem/"}
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "master"
+    }
+  },
   "repositories": [
+    {
+      "type": "git",
+      "url": "ssh://git@github.com/devgeniem/geniem-rules-codesniffer.git"
+    },
     {
       "type": "composer",
       "url": "https://wpackagist.org"
