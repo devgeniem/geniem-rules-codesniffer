@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 1.0.2 - 2020-06-01
+
+### Added
+
+- Added USED_RULES.md
+
+### Changed
+
+- Changed the README.md file, added list of commands
+
 ## 1.0.1 - 2020-06-01
 
 ### Added

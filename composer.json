@@ -24,14 +24,19 @@
     "preferred-install": "dist"
   },
   "scripts": {
+    "post-package-update": [
+      "@install-codestandards",
+      "@used-rules-list-update"
+    ],
     "install-codestandards": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
     "changelog-bump": "vendor/bin/keep-a-changelog bump",
-    "changelog-add": "vendor/bin/keep-a-changelog entry:added",
+    "changelog-added": "vendor/bin/keep-a-changelog entry:added",
     "changelog-changed": "vendor/bin/keep-a-changelog entry:changed",
     "changelog-removed": "vendor/bin/keep-a-changelog entry:removed",
     "changelog-ready": "vendor/bin/keep-a-changelog version:ready",
     "changelog-version": "vendor/bin/keep-a-changelog version:show",
     "changelog-tag-and-release": "vendor/bin/keep-a-changelog version:tag",
+    "used-rules-list-update": "vendor/bin/phpcs --standard=Geniem -e > USED_RULES.md",
     "lint": "bin/local-phpcs",
     "phpcs": "bin/local-phpcs"
   },

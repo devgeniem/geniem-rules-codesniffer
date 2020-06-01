@@ -11,6 +11,8 @@ Adds to the mix some of our own rules:
 - `Geniem.ControlStructures.ElseCatchNewline`
   - Make else and catch blocks to start from new line
 
+[The Geniem standard contains over 250 rules. Check them out.](USED_RULES.md)
+
 ## Installation
 
 ```
@@ -33,6 +35,23 @@ You could add to your project `composer.json` file the following:
 ```
 
 After that has been added to your `composer.json` file, you can run `composer lint` to check for all the errors and warnings.
+
+## Development
+
+This project contains few helpers to make the development experience easier and faster.
+
+These commands are available in the `composer.json` file, and are used `composer [command]`. The `composer` part has been omitted for brevity.
+
+| Command                               | Description                                   |
+|---------------------------------------|-----------------------------------------------|
+| `used-rules-list-update`              | Updates `USED_RULES.md`                       |
+| `changelog-bump`                      | Create new version in `CHANGELOG.md`          |
+| `changelog-changed [message]`         | Add an entry to Changed -section.             |
+| `changelog-added [message]`           | Add an entry to Added -section.               |
+| `changelog-removed [message]`         | Add an entry to Removed -section.             |
+| `changelog-ready`                     | Mark the version ready for release.           |
+| `changelog-version`                   | Show the current version.                     |
+| `changelog-tag-and-release [version]` | **REQUIRES GPG** Tag and release the version. |
 
 ## Developers
 
