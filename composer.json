@@ -25,6 +25,13 @@
   },
   "scripts": {
     "install-codestandards": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+    "changelog-bump": "vendor/bin/keep-a-changelog bump",
+    "changelog-add": "vendor/bin/keep-a-changelog entry:added",
+    "changelog-changed": "vendor/bin/keep-a-changelog entry:changed",
+    "changelog-removed": "vendor/bin/keep-a-changelog entry:removed",
+    "changelog-ready": "vendor/bin/keep-a-changelog version:ready",
+    "changelog-version": "vendor/bin/keep-a-changelog version:show",
+    "changelog-tag-and-release": "vendor/bin/keep-a-changelog version:tag",
     "lint": "bin/local-phpcs",
     "phpcs": "bin/local-phpcs"
   },
@@ -54,5 +61,8 @@
       "type": "composer",
       "url": "https://wpackagist.org"
     }
-  ]
+  ],
+  "require-dev": {
+    "phly/keep-a-changelog": "^2.4"
+  }
 }
