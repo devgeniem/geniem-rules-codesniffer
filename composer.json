@@ -24,7 +24,7 @@
     "preferred-install": "dist"
   },
   "scripts": {
-    "post-package-update": [
+    "post-autoload-dump": [
       "@install-codestandards",
       "@used-rules-list-update"
     ],
@@ -36,7 +36,7 @@
     "changelog-ready": "vendor/bin/keep-a-changelog version:ready",
     "changelog-version": "vendor/bin/keep-a-changelog version:show",
     "changelog-tag-and-release": "vendor/bin/keep-a-changelog version:tag",
-    "used-rules-list-update": "vendor/bin/phpcs --standard=Geniem -e > USED_RULES.md",
+    "used-rules-list-update": "vendor/bin/phpcs --standard=./Geniem/ruleset.xml -e > USED_RULES.md",
     "lint": "bin/local-phpcs",
     "phpcs": "bin/local-phpcs"
   },

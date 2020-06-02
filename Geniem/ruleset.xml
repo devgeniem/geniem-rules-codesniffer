@@ -183,16 +183,23 @@
 
         <!-- Welcome to the dark side -->
         <exclude name="WordPress.PHP.YodaConditions"/>
+        <exclude name="WordPress.PHP.YodaConditions.NotYoda"/>
 
         <!-- Does not comply with DustPress class naming conventions. -->
         <exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
         <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
 
-        <!-- There are numerous cases where we want to override WP globals
-        <exclude name="WordPress.Variables.GlobalVariables"/>-->
+        <!-- There are numerous cases where we want to override WP globals -->
+        <exclude name="WordPress.WP.GlobalVariablesOverride.Prohibited"/>
 
         <!-- Exclude the rule that overrides the previously declared rule -->
         <exclude name="Squiz.ControlStructures.ControlSignature"/>
+
+        <!-- We sometimes comment the elseif block, or similar. -->
+        <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
+
+        <!-- ?:-P -->
+        <exclude name="WordPress.PHP.DisallowShortTernary.Found"/>
     </rule>
 
     <!-- Allow dynamic indentation amounts when row starts with an object assignation arrow -->
