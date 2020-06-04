@@ -52,11 +52,6 @@
   "autoload": {
     "psr-4": {"Geniem\\": "Geniem/"}
   },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "master"
-    }
-  },
   "repositories": [
     {
       "type": "git",

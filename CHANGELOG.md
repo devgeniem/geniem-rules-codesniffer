@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 1.0.4 - 2020-06-04
+
+### Changed
+
+- Changes to package.json branch aliases
+- composer.lock has now been created with PHP 7.3
+
 ## 1.0.3 - 2020-06-02
 
 ### Changed
