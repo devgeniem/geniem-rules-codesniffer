@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 1.0.5 - TBD
+
+### Changed
+
+- Removed repo configuration line from readme, the project is public
+
 ## 1.0.4 - 2020-06-04
 
 ### Changed

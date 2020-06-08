@@ -16,7 +16,6 @@ Adds to the mix some of our own rules:
 ## Installation
 
 ```
-composer config repositories.devgeniem/geniem-rules-codesniffer git git@github.com:devgeniem/geniem-rules-codesniffer.git
 composer require --dev devgeniem/geniem-rules-codesniffer
 ```
 
