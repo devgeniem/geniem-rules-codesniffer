@@ -145,6 +145,11 @@
     <rule ref="Generic.PHP.LowerCaseKeyword"/>
     <rule ref="Generic.PHP.LowerCaseConstant"/>
 
+    <!-- We use these all the time. -->
+    <exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine" />
+    <exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket" />
+    <exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments" />
+
     <!-- Include WordPress Coding Standards with few exclusions -->
     <rule ref="WordPress">
         <!--
@@ -200,6 +205,13 @@
 
         <!-- ?:-P -->
         <exclude name="WordPress.PHP.DisallowShortTernary.Found"/>
+
+        <exclude name="WordPress.DateTime.RestrictedFunctions.date_date" />
+
+        <!-- These really shouldn't be excluded, but we have really good caching. -->
+        <exclude name="WordPress.DB.SlowDBQuery.slow_db_query_meta_key" />
+        <exclude name="WordPress.DB.SlowDBQuery.slow_db_query_meta_query" />
+        <exclude name="WordPress.DB.SlowDBQuery.slow_db_query_tax_query" />
     </rule>
 
     <!-- Allow dynamic indentation amounts when row starts with an object assignation arrow -->

@@ -6,7 +6,18 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Changed
 
-- Removed repo configuration line from readme, the project is public
+- Removed repo configuration line from the README.md, the project is public
+
+- Excluded rules
+    - From `PEAR.*`
+        - `PEAR.Functions.FunctionCallSignature.CloseBracketLine`
+        - `PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket`
+        - `PEAR.Functions.FunctionCallSignature.MultipleArguments`
+    - From `WordPress.*`
+        - `WordPress.DB.SlowDBQuery.slow_db_query_meta_key`
+        - `WordPress.DB.SlowDBQuery.slow_db_query_meta_query`
+        - `WordPress.DB.SlowDBQuery.slow_db_query_tax_query`
+        - `WordPress.DateTime.RestrictedFunctions.date_date`
 
 ## 1.0.4 - 2020-06-04
 
