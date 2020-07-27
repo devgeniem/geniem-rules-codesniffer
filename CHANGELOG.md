@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 1.0.6 - 2020-07-27
+
+### Added
+
+- Changelog 'Fixed' command `composer cl-fix [message]`
+
+### Changed
+
+- Renamed `composer changelog-*` commands to `composer cl-*`
+
+### Fixed
+
+- PEAR.Functions.FunctionCallSignature rules exclusion
+- [USED_RULES.md](USED_RULES.md) file indentation
+
 ## 1.0.5 - 2020-06-10
 
 ### Changed

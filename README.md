@@ -44,12 +44,13 @@ These commands are available in the `composer.json` file, and are used `composer
 | Command                               | Description                                   |
 |---------------------------------------|-----------------------------------------------|
 | `used-rules-list-update`              | Updates `USED_RULES.md`                       |
-| `changelog-bump`                      | Create new version in `CHANGELOG.md`          |
-| `changelog-changed [message]`         | Add an entry to Changed -section.             |
-| `changelog-added [message]`           | Add an entry to Added -section.               |
-| `changelog-removed [message]`         | Add an entry to Removed -section.             |
-| `changelog-ready`                     | Mark the version ready for release.           |
-| `changelog-version`                   | Show the current version.                     |
+| `cl-bump`                             | Create new version in `CHANGELOG.md`          |
+| `cl-change [message]`                 | Add an entry to Changed -section.             |
+| `cl-add [message]`                    | Add an entry to Added -section.               |
+| `cl-fix [message]`                    | Add an entry to Fixed -section.               |
+| `cl-remove [message]`                 | Add an entry to Removed -section.             |
+| `cl-ready`                            | Mark the version ready for release.           |
+| `cl-version`                          | Show the current version.                     |
 | `changelog-tag-and-release [version]` | **REQUIRES GPG** Tag and release the version. |
 
 ## Developers
