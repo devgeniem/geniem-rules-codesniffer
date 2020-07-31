@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 1.0.7 - 2020-07-31
+
+### Fixed
+
+- `PHP_CodeSniffer_Tokens` should be `\PHP_CodeSniffer\Util\Tokens`
+
 ## 1.0.6 - 2020-07-27
 
 ### Added

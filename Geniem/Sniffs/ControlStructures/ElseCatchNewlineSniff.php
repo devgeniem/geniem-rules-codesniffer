@@ -11,6 +11,7 @@
 
 namespace Geniem\Sniffs\ControlStructures;
 
+use \PHP_CodeSniffer\Util\Tokens;
 use WordPressCS\WordPress\Sniff;
 
 /**
@@ -47,7 +48,7 @@ class ElseCatchNewlineSniff extends Sniff {
     public function process_token( $stackPtr ) {
         $tokens            = $this->phpcsFile->getTokens();
         $prevNonWhiteSpace = $this->phpcsFile->findPrevious(
-            \PHP_CodeSniffer_Tokens::$emptyTokens,
+            Tokens::$emptyTokens,
             ( $stackPtr - 1 ),
             null,
             true
