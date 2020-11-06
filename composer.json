@@ -10,9 +10,6 @@
       "homepage": "https://github.com/devgeniem/geniem-rules-codesniffer/graphs/contributors"
     }
   ],
-  "bin": [
-    "bin/local-phpcs"
-  ],
   "keywords": [
     "tooling",
     "phpcs",
@@ -38,15 +35,15 @@
     "cl-version": "vendor/bin/keep-a-changelog version:show",
     "cl-tag-and-release": "vendor/bin/keep-a-changelog version:tag",
     "used-rules-list-update": "vendor/bin/phpcs --standard=./Geniem/ruleset.xml -e | sed -e 's/  /    /' > USED_RULES.md",
-    "lint": "bin/local-phpcs",
-    "phpcs": "bin/local-phpcs"
+    "lint": "vendor/bin/phpcs",
+    "phpcs": "vendor/bin/phpcs"
   },
   "require": {
     "php": ">=7.3",
     "automattic/vipwpcs": "^2.0",
     "composer/installers": "^v1.7.0",
-    "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
-    "phpcompatibility/php-compatibility": "^9.3",
+    "dealerdirect/phpcodesniffer-composer-installer": "*",
+    "phpcompatibility/php-compatibility": "*",
     "squizlabs/php_codesniffer": "^3.5.5",
     "wp-coding-standards/wpcs": "^2.3"
   },
@@ -64,6 +61,7 @@
     }
   ],
   "require-dev": {
+    "roave/security-advisories": "dev-master",
     "phly/keep-a-changelog": "^2.4"
   }
 }

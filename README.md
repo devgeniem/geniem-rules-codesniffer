@@ -17,19 +17,22 @@ Adds to the mix some of our own rules:
 
 ```
 composer require --dev devgeniem/geniem-rules-codesniffer
+cp vendor/devgeniem/geniem-rules-codesniffer/phpcs.xml.dist-project phpcs.xml.dist
 ```
 
 ## Usage
 
-Use `vendor/bin/phpcs --standard=Geniem web/app/ config/` to make sure you are using the `phpcs` command from this package.
+Use `vendor/bin/phpcs --standard=phpcs.xml web/app/ config/` to make sure you are using the `phpcs` command from this package.
 
 You could add to your project `composer.json` file the following:
 
 ```json
 {
-  "scripts": {
-      "lint": "vendor/bin/phpcs --standard=Geniem web/app/ config/"
-  }
+    "scripts": {
+        "lint": "vendor/bin/phpcs --standard=phpcs.xml web/app/ config/ -s --warning-severity=0",
+        "lint-all": "vendor/bin/phpcs --standard=phpcs.xml web/app/ config/",
+        "lint-fix": "vendor/bin/phpcbf --standard=phpcs.xml --basepath=. ./web/app/ ./config/"
+    }
 }
 ```
 

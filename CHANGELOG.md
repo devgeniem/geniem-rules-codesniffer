@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 1.0.8 - 2020-11-06
+
+### Added
+
+- `composer lint`, `composer lint-all`, and `composer lint-fix` examples.
+- Package is now supports Composer v2.
+- Better `phpcs.xml` for projects. Use `phpcs.xml.dist-project` in your projects.
+- Added `roave/security-advisories` to dev-dependencies to block known security vulnerabilities.
+
+### Changed
+
+- Moved `<config name="testVersion" value="7.3-"/>` from `ruleset.xml` to `phpcs.xml`. Configuration can now be changed at project level.
+
+### Removed
+
+- `bin/local-phpcs` which didn't work as expected.
+
 ## 1.0.7 - 2020-07-31
 
 ### Fixed
