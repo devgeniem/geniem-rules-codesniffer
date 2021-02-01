@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 1.1.0 - 2021-02-01
+
+### Changed
+
+- Removed `<arg name="basepath" value="."/>` from `phpcs.xml.*` and `Geniem/ruleset.xml`. This fixes #1
+- Removed all other `arg` rules from `Geniem/ruleset.xml`, these should be only configured in `phpcs.xml.*`
+- Updated composer dependencies
+
 ## 1.0.8 - 2020-11-06
 
 ### Added
