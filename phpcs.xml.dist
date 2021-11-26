@@ -6,7 +6,7 @@
 
     <file>.</file>
 
-    <rule ref="Geniem"/>
+    <rule ref="./Geniem/ruleset.xml"/>
 
     <!-- Exclude Composer vendor directory. -->
     <exclude-pattern>*/.git/*</exclude-pattern>

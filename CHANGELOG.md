@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 1.2.0 - 2021-11-26
+
+- Updated packages, tweaked readme
+- Added support for `composer/installers` v2
+
 ## 1.1.0 - 2021-02-01
 
 ### Changed
