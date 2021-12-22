@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 1.2.1 - 2021-12-22
+
+### Added
+
+- Dependabot to suggest composer package updates.
+- `composer-diff` workflow to list all updates in a PR.
+
+### Changed
+
+- Updated dependencies
+
 ## 1.2.0 - 2021-11-26
 
 - Updated packages, tweaked readme
