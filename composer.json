@@ -18,7 +18,12 @@
   ],
   "config": {
     "sort-packages": true,
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "composer/installers": true,
+      "composer/package-versions-deprecated": true
+    }
   },
   "scripts": {
     "post-autoload-dump": [
@@ -26,14 +31,14 @@
       "@used-rules-list-update"
     ],
     "install-codestandards": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
-    "cl-bump": "vendor/bin/keep-a-changelog bump",
-    "cl-add": "vendor/bin/keep-a-changelog entry:added",
-    "cl-fix": "vendor/bin/keep-a-changelog entry:fixed",
-    "cl-change": "vendor/bin/keep-a-changelog entry:changed",
-    "cl-remove": "vendor/bin/keep-a-changelog entry:removed",
-    "cl-ready": "vendor/bin/keep-a-changelog version:ready",
+    "cl-1-bump": "vendor/bin/keep-a-changelog bump",
+    "cl-2-add": "vendor/bin/keep-a-changelog entry:added",
+    "cl-2-fix": "vendor/bin/keep-a-changelog entry:fixed",
+    "cl-2-change": "vendor/bin/keep-a-changelog entry:changed",
+    "cl-2-remove": "vendor/bin/keep-a-changelog entry:removed",
+    "cl-3-ready": "vendor/bin/keep-a-changelog version:ready",
+    "cl-4-tag-and-release": "vendor/bin/keep-a-changelog version:tag",
     "cl-version": "vendor/bin/keep-a-changelog version:show",
-    "cl-tag-and-release": "vendor/bin/keep-a-changelog version:tag",
     "used-rules-list-update": "vendor/bin/phpcs --standard=./Geniem/ruleset.xml -e | sed -e 's/  /    /' > USED_RULES.md",
     "lint": "vendor/bin/phpcs",
     "phpcs": "vendor/bin/phpcs"
