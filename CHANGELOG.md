@@ -5,6 +5,21 @@ in reverse chronological order by release.
 
 ## Unreleased
 
+## 1.2.3 - 2022-01-28
+
+### Added
+
+- Added dev-package: ergebnis/composer-normalize
+
+### Changed
+
+- Updated packages
+
+### Removed
+
+- Removed rule: Squiz.Commenting.FileComment
+
+
 ## 1.2.2 - 2021-12-31
 
 ### Added

@@ -1,5 +1,5 @@
 
-The Geniem standard contains 263 sniffs
+The Geniem standard contains 262 sniffs
 
 Generic (45 sniffs)
 -------------------
@@ -194,7 +194,7 @@ PSR2 (7 sniffs)
     PSR2.Methods.MethodDeclaration
     PSR2.Namespaces.NamespaceDeclaration
 
-Squiz (30 sniffs)
+Squiz (29 sniffs)
 -----------------
     Squiz.Classes.SelfMemberReference
     Squiz.Commenting.BlockComment
@@ -202,7 +202,6 @@ Squiz (30 sniffs)
     Squiz.Commenting.ClosingDeclarationComment
     Squiz.Commenting.DocCommentAlignment
     Squiz.Commenting.EmptyCatchComment
-    Squiz.Commenting.FileComment
     Squiz.Commenting.FunctionComment
     Squiz.Commenting.FunctionCommentThrowTag
     Squiz.Commenting.InlineComment

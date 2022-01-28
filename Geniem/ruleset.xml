@@ -71,7 +71,7 @@
     <rule ref="Generic.PHP.DeprecatedFunctions"/>
     <!-- There's enough space in the internet for full <?php -->
     <rule ref="Generic.PHP.DisallowShortOpenTag"/>
-    <!-- Some functions are forbitten, warn about them. -->
+    <!-- Some functions are forbidden, warn about them. -->
     <rule ref="Generic.PHP.ForbiddenFunctions">
         <properties>
             <property name="error" value="false"/>
@@ -89,13 +89,6 @@
             <property name="error" value="false"/>
         </properties>
     </rule>
-
-    <rule ref="WordPress-Extra">
-        <exclude name="WordPress.Files.FileName"/>
-        <exclude name="WordPress.NamingConventions.ValidVariableName"/>
-    </rule>
-
-    <rule ref="WordPress-Docs"/>
 
     <rule ref="WordPress.Arrays.MultipleStatementAlignment">
         <properties>
@@ -191,7 +184,7 @@
     <!-- Include WordPress Coding Standards with few exclusions -->
     <rule ref="WordPress">
         <!--
-        We may want a middle ground though. The best way to do this is add the
+        We may want a middle ground though. The best way to do this is to add the
         entire ruleset, then rule by rule, remove ones that don't suit a project. We
         can do this by running `phpcs` with the '-s' flag, to see the names of the
         different Sniffs, as their rules are broken. From here, we can opt to
@@ -257,6 +250,16 @@
         <exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments" />
 
         <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound" />
+    </rule>
+
+    <rule ref="WordPress-Extra">
+        <exclude name="WordPress.Files.FileName"/>
+        <exclude name="WordPress.NamingConventions.ValidVariableName"/>
+    </rule>
+
+    <rule ref="WordPress-Docs">
+        <exclude name="Squiz.Commenting.FileComment"/>
+        <exclude name="Squiz.Commenting.FileComment.Missing"/>
     </rule>
 
     <!-- Allow dynamic indentation amounts when row starts with an object assignation arrow -->

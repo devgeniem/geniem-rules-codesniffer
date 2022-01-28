@@ -22,7 +22,8 @@
     "allow-plugins": {
       "dealerdirect/phpcodesniffer-composer-installer": true,
       "composer/installers": true,
-      "composer/package-versions-deprecated": true
+      "composer/package-versions-deprecated": true,
+      "ergebnis/composer-normalize": true
     }
   },
   "scripts": {
@@ -39,21 +40,23 @@
     "cl-3-ready": "vendor/bin/keep-a-changelog version:ready",
     "cl-4-tag-and-release": "vendor/bin/keep-a-changelog version:tag",
     "cl-version": "vendor/bin/keep-a-changelog version:show",
-    "used-rules-list-update": "vendor/bin/phpcs --standard=./Geniem/ruleset.xml -e | sed -e 's/  /    /' > USED_RULES.md",
-    "lint": "vendor/bin/phpcs",
-    "phpcs": "vendor/bin/phpcs"
+    "used-rules-list-update": "@php -d error_reporting=22527 vendor/bin/phpcs --standard=./Geniem/ruleset.xml -e | sed -e 's/  /    /' > USED_RULES.md",
+    "lint": "@php -d error_reporting=22527 vendor/bin/phpcs",
+    "phpcs": "@php -d error_reporting=22527 vendor/bin/phpcs"
   },
   "require": {
     "php": ">=7.3",
     "automattic/vipwpcs": "^2.0",
     "composer/installers": "^v1 || ^2",
     "dealerdirect/phpcodesniffer-composer-installer": "*",
-    "phpcompatibility/php-compatibility": "*",
+    "phpcompatibility/php-compatibility": "^9.3.5",
     "squizlabs/php_codesniffer": "^3.5.5",
     "wp-coding-standards/wpcs": "^2.3"
   },
   "autoload": {
-    "psr-4": {"Geniem\\": "Geniem/"}
+    "psr-4": {
+      "Geniem\\": "Geniem/"
+    }
   },
   "repositories": [
     {
@@ -66,7 +69,8 @@
     }
   ],
   "require-dev": {
-    "roave/security-advisories": "dev-latest",
-    "phly/keep-a-changelog": "^2.4"
+    "ergebnis/composer-normalize": "^2.23",
+    "phly/keep-a-changelog": "^2.4",
+    "roave/security-advisories": "dev-latest"
   }
 }
