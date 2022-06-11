@@ -1,8 +1,14 @@
 name: Composer Diff
+
 on:
   pull_request:
     paths:
       - 'composer.lock'
+
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   composer-diff:
     name: Composer Diff
@@ -23,5 +29,7 @@ jobs:
           message: |
             <details>
             <summary>Composer package changes</summary>
+
             ${{ steps.composer_diff.outputs.composer_diff }}
+
             </details>
