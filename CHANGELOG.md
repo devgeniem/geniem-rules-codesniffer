@@ -5,6 +5,12 @@ in reverse chronological order by release.
 
 ## Unreleased
 
+## 1.2.4 - 2023-01-18
+
+### Changed
+
+- Updated packages for PHP 8.1 compatilibity
+
 ## 1.2.3 - 2022-01-28
 
 ### Added
