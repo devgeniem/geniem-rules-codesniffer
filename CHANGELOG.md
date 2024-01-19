@@ -5,6 +5,8 @@ in reverse chronological order by release.
 
 ## Unreleased
 
+## 1.2.5 - 2024-01-19
+
 ### Fixed
 
 - Fix for nonexisting Generic.NamingConventions.ConstructorName property "error", use type instead.
