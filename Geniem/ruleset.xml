@@ -63,9 +63,7 @@
 
     <!-- We sometimes have used same class name and method name. -->
     <rule ref="Generic.NamingConventions.ConstructorName">
-        <properties>
-            <property name="error" value="false"/>
-        </properties>
+        <type>warning</type>
     </rule>
     <!-- Push to move away from deprecated functions, before they are removed. -->
     <rule ref="Generic.PHP.DeprecatedFunctions"/>
