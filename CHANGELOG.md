@@ -5,6 +5,13 @@ in reverse chronological order by release.
 
 ## Unreleased
 
+## 1.3.0 - 2024-06-26
+
+### Changed
+
+- Changed plugins and mu-plugins exclude-patterns to relative so that they can be overridden for certain directories using <file> config.
+- Update packages.
+
 ## 1.2.5 - 2024-01-19
 
 ### Fixed

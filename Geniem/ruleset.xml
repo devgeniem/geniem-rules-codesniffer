@@ -9,9 +9,13 @@
     <exclude-pattern>*/.git/*</exclude-pattern>
     <exclude-pattern>*/vendor/*</exclude-pattern>
 
-    <!-- Don't check Plugins, we might not have option (or resources) to fix them -->
-    <exclude-pattern>*/mu-plugins/*</exclude-pattern>
-    <exclude-pattern>*/plugins/*</exclude-pattern>
+    <!--
+        Don't check Plugins, we might not have option (or resources) to fix them.
+        These paths are specified as relative so that we can include certain files or directories
+        within these directories using <file>foo/bar</file>.
+    -->
+    <exclude-pattern type="relative">*/mu-plugins/*</exclude-pattern>
+    <exclude-pattern type="relative">*/plugins/*</exclude-pattern>
 
     <!-- db-error.php and object-cache.php, not ours. -->
     <exclude-pattern>*/db-error.php</exclude-pattern>
