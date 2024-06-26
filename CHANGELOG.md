@@ -10,6 +10,7 @@ in reverse chronological order by release.
 ### Changed
 
 - Changed plugins and mu-plugins exclude-patterns to relative so that they can be overridden for certain directories using <file> config.
+- Exclude languages folder.
 - Update packages.
 
 ## 1.2.5 - 2024-01-19

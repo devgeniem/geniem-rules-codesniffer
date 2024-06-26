@@ -17,6 +17,9 @@
     <exclude-pattern type="relative">*/mu-plugins/*</exclude-pattern>
     <exclude-pattern type="relative">*/plugins/*</exclude-pattern>
 
+    <!-- Don't check languages -->
+    <exclude-pattern type="relative">*/languages/*</exclude-pattern>
+
     <!-- db-error.php and object-cache.php, not ours. -->
     <exclude-pattern>*/db-error.php</exclude-pattern>
     <exclude-pattern>*/object-cache.php</exclude-pattern>
