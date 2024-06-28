@@ -50,7 +50,7 @@ Generic (45 sniffs)
     Generic.WhiteSpace.ScopeIndent
 
 Geniem (1 sniff)
------------------
+----------------
     Geniem.ControlStructures.ElseCatchNewline
 
 PEAR (4 sniffs)
@@ -139,21 +139,21 @@ PHPCompatibility (117 sniffs)
     PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML
     PHPCompatibility.ParameterValues.NewArrayReduceInitialType
     PHPCompatibility.ParameterValues.NewFopenModes
-    PHPCompatibility.ParameterValues.NewHTMLEntitiesEncodingDefault
     PHPCompatibility.ParameterValues.NewHashAlgorithms
-    PHPCompatibility.ParameterValues.NewIDNVariantDefault
+    PHPCompatibility.ParameterValues.NewHTMLEntitiesEncodingDefault
     PHPCompatibility.ParameterValues.NewIconvMbstringCharsetDefault
+    PHPCompatibility.ParameterValues.NewIDNVariantDefault
     PHPCompatibility.ParameterValues.NewNegativeStringOffset
-    PHPCompatibility.ParameterValues.NewPCREModifiers
     PHPCompatibility.ParameterValues.NewPackFormat
     PHPCompatibility.ParameterValues.NewPasswordAlgoConstantValues
+    PHPCompatibility.ParameterValues.NewPCREModifiers
     PHPCompatibility.ParameterValues.NewProcOpenCmdArray
     PHPCompatibility.ParameterValues.NewStripTagsAllowableTagsArray
     PHPCompatibility.ParameterValues.RemovedHashAlgorithms
     PHPCompatibility.ParameterValues.RemovedIconvEncoding
     PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder
-    PHPCompatibility.ParameterValues.RemovedMbStrrposEncodingThirdParam
     PHPCompatibility.ParameterValues.RemovedMbstringModifiers
+    PHPCompatibility.ParameterValues.RemovedMbStrrposEncodingThirdParam
     PHPCompatibility.ParameterValues.RemovedNonCryptoHash
     PHPCompatibility.ParameterValues.RemovedPCREModifiers
     PHPCompatibility.ParameterValues.RemovedSetlocaleString
@@ -180,10 +180,6 @@ PHPCompatibility (117 sniffs)
     PHPCompatibility.Variables.NewUniformVariableSyntax
     PHPCompatibility.Variables.RemovedPredefinedGlobalVariables
 
-PSR12 (1 sniff)
-----------------
-    PSR12.Keywords.ShortFormTypeKeywords
-
 PSR2 (7 sniffs)
 ---------------
     PSR2.Classes.PropertyDeclaration
@@ -193,6 +189,10 @@ PSR2 (7 sniffs)
     PSR2.Methods.FunctionClosingBrace
     PSR2.Methods.MethodDeclaration
     PSR2.Namespaces.NamespaceDeclaration
+
+PSR12 (1 sniff)
+---------------
+    PSR12.Keywords.ShortFormTypeKeywords
 
 Squiz (29 sniffs)
 -----------------
@@ -237,14 +237,14 @@ WordPress (58 sniffs)
     WordPress.CodeAnalysis.AssignmentInCondition
     WordPress.CodeAnalysis.EmptyStatement
     WordPress.CodeAnalysis.EscapedNotTranslated
+    WordPress.DateTime.CurrentTimeTimestamp
+    WordPress.DateTime.RestrictedFunctions
     WordPress.DB.DirectDatabaseQuery
     WordPress.DB.PreparedSQL
     WordPress.DB.PreparedSQLPlaceholders
     WordPress.DB.RestrictedClasses
     WordPress.DB.RestrictedFunctions
     WordPress.DB.SlowDBQuery
-    WordPress.DateTime.CurrentTimeTimestamp
-    WordPress.DateTime.RestrictedFunctions
     WordPress.NamingConventions.PrefixAllGlobals
     WordPress.NamingConventions.ValidFunctionName
     WordPress.NamingConventions.ValidHookName
@@ -266,13 +266,18 @@ WordPress (58 sniffs)
     WordPress.Security.SafeRedirect
     WordPress.Security.ValidatedSanitizedInput
     WordPress.Utils.I18nTextDomainFixer
+    WordPress.WhiteSpace.CastStructureSpacing
+    WordPress.WhiteSpace.ControlStructureSpacing
+    WordPress.WhiteSpace.DisallowInlineTabs
+    WordPress.WhiteSpace.OperatorSpacing
+    WordPress.WhiteSpace.PrecisionAlignment
     WordPress.WP.AlternativeFunctions
     WordPress.WP.CapitalPDangit
     WordPress.WP.CronInterval
     WordPress.WP.DeprecatedClasses
     WordPress.WP.DeprecatedFunctions
-    WordPress.WP.DeprecatedParameterValues
     WordPress.WP.DeprecatedParameters
+    WordPress.WP.DeprecatedParameterValues
     WordPress.WP.DiscouragedConstants
     WordPress.WP.DiscouragedFunctions
     WordPress.WP.EnqueuedResourceParameters
@@ -281,8 +286,3 @@ WordPress (58 sniffs)
     WordPress.WP.I18n
     WordPress.WP.PostsPerPage
     WordPress.WP.TimezoneChange
-    WordPress.WhiteSpace.CastStructureSpacing
-    WordPress.WhiteSpace.ControlStructureSpacing
-    WordPress.WhiteSpace.DisallowInlineTabs
-    WordPress.WhiteSpace.OperatorSpacing
-    WordPress.WhiteSpace.PrecisionAlignment

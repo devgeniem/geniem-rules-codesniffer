@@ -23,7 +23,8 @@
       "dealerdirect/phpcodesniffer-composer-installer": true,
       "composer/installers": true,
       "composer/package-versions-deprecated": true,
-      "ergebnis/composer-normalize": true
+      "ergebnis/composer-normalize": true,
+      "php-http/discovery": true
     }
   },
   "scripts": {
