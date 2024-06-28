@@ -1,4 +1,338 @@
-ERROR: Referenced sniff "PHPCSUtils" does not exist
 
-Run "phpcs --help" for usage information
+The Geniem standard contains 303 sniffs
 
+Generic (50 sniffs)
+-------------------
+    Generic.Arrays.DisallowLongArraySyntax
+    Generic.Classes.DuplicateClassName
+    Generic.Classes.OpeningBraceSameLine
+    Generic.CodeAnalysis.AssignmentInCondition
+    Generic.CodeAnalysis.EmptyPHPStatement
+    Generic.CodeAnalysis.EmptyStatement
+    Generic.CodeAnalysis.ForLoopShouldBeWhileLoop
+    Generic.CodeAnalysis.ForLoopWithTestFunctionCall
+    Generic.CodeAnalysis.JumbledIncrementer
+    Generic.CodeAnalysis.RequireExplicitBooleanOperatorPrecedence
+    Generic.CodeAnalysis.UnconditionalIfStatement
+    Generic.CodeAnalysis.UnnecessaryFinalModifier
+    Generic.CodeAnalysis.UnusedFunctionParameter
+    Generic.CodeAnalysis.UselessOverridingMethod
+    Generic.Commenting.DocComment
+    Generic.Commenting.Todo
+    Generic.ControlStructures.InlineControlStructure
+    Generic.Files.ByteOrderMark
+    Generic.Files.LineEndings
+    Generic.Files.LineLength
+    Generic.Files.OneObjectStructurePerFile
+    Generic.Formatting.DisallowMultipleStatements
+    Generic.Formatting.MultipleStatementAlignment
+    Generic.Formatting.SpaceAfterCast
+    Generic.Functions.CallTimePassByReference
+    Generic.Functions.FunctionCallArgumentSpacing
+    Generic.Functions.OpeningFunctionBraceKernighanRitchie
+    Generic.Metrics.CyclomaticComplexity
+    Generic.Metrics.NestingLevel
+    Generic.NamingConventions.ConstructorName
+    Generic.NamingConventions.UpperCaseConstantName
+    Generic.PHP.BacktickOperator
+    Generic.PHP.DeprecatedFunctions
+    Generic.PHP.DisallowAlternativePHPTags
+    Generic.PHP.DisallowShortOpenTag
+    Generic.PHP.DiscourageGoto
+    Generic.PHP.ForbiddenFunctions
+    Generic.PHP.LowerCaseConstant
+    Generic.PHP.LowerCaseKeyword
+    Generic.PHP.LowerCaseType
+    Generic.PHP.NoSilencedErrors
+    Generic.PHP.Syntax
+    Generic.Strings.UnnecessaryStringConcat
+    Generic.VersionControl.GitMergeConflict
+    Generic.WhiteSpace.ArbitraryParenthesesSpacing
+    Generic.WhiteSpace.DisallowSpaceIndent
+    Generic.WhiteSpace.IncrementDecrementSpacing
+    Generic.WhiteSpace.LanguageConstructSpacing
+    Generic.WhiteSpace.ScopeIndent
+    Generic.WhiteSpace.SpreadOperatorSpacingAfter
+
+Geniem (1 sniff)
+----------------
+    Geniem.ControlStructures.ElseCatchNewline
+
+Modernize (1 sniff)
+-------------------
+    Modernize.FunctionCalls.Dirname
+
+NormalizedArrays (2 sniffs)
+---------------------------
+    NormalizedArrays.Arrays.ArrayBraceSpacing
+    NormalizedArrays.Arrays.CommaAfterLast
+
+PEAR (4 sniffs)
+---------------
+    PEAR.Files.IncludingFile
+    PEAR.Functions.FunctionCallSignature
+    PEAR.Functions.ValidDefaultValue
+    PEAR.NamingConventions.ValidClassName
+
+PHPCompatibility (117 sniffs)
+-----------------------------
+    PHPCompatibility.Classes.ForbiddenAbstractPrivateMethods
+    PHPCompatibility.Classes.NewAnonymousClasses
+    PHPCompatibility.Classes.NewClasses
+    PHPCompatibility.Classes.NewConstVisibility
+    PHPCompatibility.Classes.NewLateStaticBinding
+    PHPCompatibility.Classes.NewTypedProperties
+    PHPCompatibility.Classes.RemovedOrphanedParent
+    PHPCompatibility.Constants.NewConstants
+    PHPCompatibility.Constants.NewMagicClassConstant
+    PHPCompatibility.Constants.RemovedConstants
+    PHPCompatibility.ControlStructures.DiscouragedSwitchContinue
+    PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop
+    PHPCompatibility.ControlStructures.ForbiddenBreakContinueVariableArguments
+    PHPCompatibility.ControlStructures.ForbiddenSwitchWithMultipleDefaultBlocks
+    PHPCompatibility.ControlStructures.NewExecutionDirectives
+    PHPCompatibility.ControlStructures.NewForeachExpressionReferencing
+    PHPCompatibility.ControlStructures.NewListInForeach
+    PHPCompatibility.ControlStructures.NewMultiCatch
+    PHPCompatibility.Extensions.RemovedExtensions
+    PHPCompatibility.FunctionDeclarations.ForbiddenParameterShadowSuperGlobals
+    PHPCompatibility.FunctionDeclarations.ForbiddenParametersWithSameName
+    PHPCompatibility.FunctionDeclarations.ForbiddenToStringParameters
+    PHPCompatibility.FunctionDeclarations.ForbiddenVariableNamesInClosureUse
+    PHPCompatibility.FunctionDeclarations.NewClosure
+    PHPCompatibility.FunctionDeclarations.NewExceptionsFromToString
+    PHPCompatibility.FunctionDeclarations.NewNullableTypes
+    PHPCompatibility.FunctionDeclarations.NewParamTypeDeclarations
+    PHPCompatibility.FunctionDeclarations.NewReturnTypeDeclarations
+    PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods
+    PHPCompatibility.FunctionNameRestrictions.NewMagicMethods
+    PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload
+    PHPCompatibility.FunctionNameRestrictions.RemovedNamespacedAssert
+    PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors
+    PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames
+    PHPCompatibility.FunctionUse.ArgumentFunctionsReportCurrentValue
+    PHPCompatibility.FunctionUse.ArgumentFunctionsUsage
+    PHPCompatibility.FunctionUse.NewFunctionParameters
+    PHPCompatibility.FunctionUse.NewFunctions
+    PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters
+    PHPCompatibility.FunctionUse.RemovedFunctionParameters
+    PHPCompatibility.FunctionUse.RemovedFunctions
+    PHPCompatibility.FunctionUse.RequiredToOptionalFunctionParameters
+    PHPCompatibility.Generators.NewGeneratorReturn
+    PHPCompatibility.IniDirectives.NewIniDirectives
+    PHPCompatibility.IniDirectives.RemovedIniDirectives
+    PHPCompatibility.InitialValue.NewConstantArraysUsingConst
+    PHPCompatibility.InitialValue.NewConstantArraysUsingDefine
+    PHPCompatibility.InitialValue.NewConstantScalarExpressions
+    PHPCompatibility.InitialValue.NewHeredoc
+    PHPCompatibility.Interfaces.InternalInterfaces
+    PHPCompatibility.Interfaces.NewInterfaces
+    PHPCompatibility.Keywords.CaseSensitiveKeywords
+    PHPCompatibility.Keywords.ForbiddenNames
+    PHPCompatibility.Keywords.ForbiddenNamesAsDeclared
+    PHPCompatibility.Keywords.ForbiddenNamesAsInvokedFunctions
+    PHPCompatibility.Keywords.NewKeywords
+    PHPCompatibility.LanguageConstructs.NewEmptyNonVariable
+    PHPCompatibility.LanguageConstructs.NewLanguageConstructs
+    PHPCompatibility.Lists.AssignmentOrder
+    PHPCompatibility.Lists.ForbiddenEmptyListAssignment
+    PHPCompatibility.Lists.NewKeyedList
+    PHPCompatibility.Lists.NewListReferenceAssignment
+    PHPCompatibility.Lists.NewShortList
+    PHPCompatibility.MethodUse.ForbiddenToStringParameters
+    PHPCompatibility.MethodUse.NewDirectCallsToClone
+    PHPCompatibility.Miscellaneous.NewPHPOpenTagEOF
+    PHPCompatibility.Miscellaneous.RemovedAlternativePHPTags
+    PHPCompatibility.Miscellaneous.ValidIntegers
+    PHPCompatibility.Operators.ChangedConcatOperatorPrecedence
+    PHPCompatibility.Operators.ForbiddenNegativeBitshift
+    PHPCompatibility.Operators.NewOperators
+    PHPCompatibility.Operators.NewShortTernary
+    PHPCompatibility.Operators.RemovedTernaryAssociativity
+    PHPCompatibility.ParameterValues.ForbiddenGetClassNull
+    PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML
+    PHPCompatibility.ParameterValues.NewArrayReduceInitialType
+    PHPCompatibility.ParameterValues.NewFopenModes
+    PHPCompatibility.ParameterValues.NewHashAlgorithms
+    PHPCompatibility.ParameterValues.NewHTMLEntitiesEncodingDefault
+    PHPCompatibility.ParameterValues.NewIconvMbstringCharsetDefault
+    PHPCompatibility.ParameterValues.NewIDNVariantDefault
+    PHPCompatibility.ParameterValues.NewNegativeStringOffset
+    PHPCompatibility.ParameterValues.NewPackFormat
+    PHPCompatibility.ParameterValues.NewPasswordAlgoConstantValues
+    PHPCompatibility.ParameterValues.NewPCREModifiers
+    PHPCompatibility.ParameterValues.NewProcOpenCmdArray
+    PHPCompatibility.ParameterValues.NewStripTagsAllowableTagsArray
+    PHPCompatibility.ParameterValues.RemovedHashAlgorithms
+    PHPCompatibility.ParameterValues.RemovedIconvEncoding
+    PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder
+    PHPCompatibility.ParameterValues.RemovedMbstringModifiers
+    PHPCompatibility.ParameterValues.RemovedMbStrrposEncodingThirdParam
+    PHPCompatibility.ParameterValues.RemovedNonCryptoHash
+    PHPCompatibility.ParameterValues.RemovedPCREModifiers
+    PHPCompatibility.ParameterValues.RemovedSetlocaleString
+    PHPCompatibility.Syntax.ForbiddenCallTimePassByReference
+    PHPCompatibility.Syntax.NewArrayStringDereferencing
+    PHPCompatibility.Syntax.NewArrayUnpacking
+    PHPCompatibility.Syntax.NewClassMemberAccess
+    PHPCompatibility.Syntax.NewDynamicAccessToStatic
+    PHPCompatibility.Syntax.NewFlexibleHeredocNowdoc
+    PHPCompatibility.Syntax.NewFunctionArrayDereferencing
+    PHPCompatibility.Syntax.NewFunctionCallTrailingComma
+    PHPCompatibility.Syntax.NewShortArray
+    PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess
+    PHPCompatibility.Syntax.RemovedNewReference
+    PHPCompatibility.TextStrings.NewUnicodeEscapeSequence
+    PHPCompatibility.TypeCasts.NewTypeCasts
+    PHPCompatibility.TypeCasts.RemovedTypeCasts
+    PHPCompatibility.Upgrade.LowPHP
+    PHPCompatibility.Upgrade.LowPHPCS
+    PHPCompatibility.UseDeclarations.NewGroupUseDeclarations
+    PHPCompatibility.UseDeclarations.NewUseConstFunction
+    PHPCompatibility.Variables.ForbiddenGlobalVariableVariable
+    PHPCompatibility.Variables.ForbiddenThisUseContexts
+    PHPCompatibility.Variables.NewUniformVariableSyntax
+    PHPCompatibility.Variables.RemovedPredefinedGlobalVariables
+
+PSR2 (9 sniffs)
+---------------
+    PSR2.Classes.ClassDeclaration
+    PSR2.Classes.PropertyDeclaration
+    PSR2.ControlStructures.ElseIfDeclaration
+    PSR2.ControlStructures.SwitchDeclaration
+    PSR2.Files.ClosingTag
+    PSR2.Files.EndFileNewline
+    PSR2.Methods.FunctionClosingBrace
+    PSR2.Methods.MethodDeclaration
+    PSR2.Namespaces.NamespaceDeclaration
+
+PSR12 (6 sniffs)
+----------------
+    PSR12.Classes.ClassInstantiation
+    PSR12.Files.FileHeader
+    PSR12.Functions.NullableTypeDeclaration
+    PSR12.Functions.ReturnTypeDeclaration
+    PSR12.Keywords.ShortFormTypeKeywords
+    PSR12.Traits.UseDeclaration
+
+Squiz (28 sniffs)
+-----------------
+    Squiz.Classes.SelfMemberReference
+    Squiz.Commenting.BlockComment
+    Squiz.Commenting.ClassComment
+    Squiz.Commenting.ClosingDeclarationComment
+    Squiz.Commenting.DocCommentAlignment
+    Squiz.Commenting.EmptyCatchComment
+    Squiz.Commenting.FunctionComment
+    Squiz.Commenting.FunctionCommentThrowTag
+    Squiz.Commenting.InlineComment
+    Squiz.Commenting.VariableComment
+    Squiz.Functions.FunctionDeclarationArgumentSpacing
+    Squiz.Functions.FunctionDuplicateArgument
+    Squiz.Functions.MultiLineFunctionDeclaration
+    Squiz.Operators.IncrementDecrementUsage
+    Squiz.Operators.ValidLogicalOperators
+    Squiz.PHP.CommentedOutCode
+    Squiz.PHP.DisallowMultipleAssignments
+    Squiz.PHP.DisallowSizeFunctionsInLoops
+    Squiz.PHP.EmbeddedPhp
+    Squiz.PHP.Eval
+    Squiz.PHP.NonExecutableCode
+    Squiz.Scope.MethodScope
+    Squiz.Strings.ConcatenationSpacing
+    Squiz.Strings.DoubleQuoteUsage
+    Squiz.WhiteSpace.CastSpacing
+    Squiz.WhiteSpace.ScopeKeywordSpacing
+    Squiz.WhiteSpace.SemicolonSpacing
+    Squiz.WhiteSpace.SuperfluousWhitespace
+
+Universal (32 sniffs)
+---------------------
+    Universal.Arrays.DisallowShortArraySyntax
+    Universal.Arrays.DuplicateArrayKey
+    Universal.Classes.ModifierKeywordOrder
+    Universal.Classes.RequireAnonClassParentheses
+    Universal.CodeAnalysis.ConstructorDestructorReturn
+    Universal.CodeAnalysis.ForeachUniqueAssignment
+    Universal.CodeAnalysis.NoDoubleNegative
+    Universal.CodeAnalysis.NoEchoSprintf
+    Universal.CodeAnalysis.StaticInFinalClass
+    Universal.Constants.LowercaseClassResolutionKeyword
+    Universal.Constants.ModifierKeywordOrder
+    Universal.Constants.UppercaseMagicConstants
+    Universal.ControlStructures.DisallowLonelyIf
+    Universal.Files.SeparateFunctionsFromOO
+    Universal.Namespaces.DisallowCurlyBraceSyntax
+    Universal.Namespaces.DisallowDeclarationWithoutName
+    Universal.Namespaces.OneDeclarationPerFile
+    Universal.NamingConventions.NoReservedKeywordParameterNames
+    Universal.Operators.DisallowShortTernary
+    Universal.Operators.DisallowStandalonePostIncrementDecrement
+    Universal.Operators.StrictComparisons
+    Universal.Operators.TypeSeparatorSpacing
+    Universal.PHP.LowercasePHPTag
+    Universal.UseStatements.DisallowMixedGroupUse
+    Universal.UseStatements.KeywordSpacing
+    Universal.UseStatements.LowercaseFunctionConst
+    Universal.UseStatements.NoLeadingBackslash
+    Universal.UseStatements.NoUselessAliases
+    Universal.WhiteSpace.AnonClassKeywordSpacing
+    Universal.WhiteSpace.CommaSpacing
+    Universal.WhiteSpace.DisallowInlineTabs
+    Universal.WhiteSpace.PrecisionAlignment
+
+WordPress (53 sniffs)
+---------------------
+    WordPress.Arrays.ArrayDeclarationSpacing
+    WordPress.Arrays.ArrayIndentation
+    WordPress.Arrays.ArrayKeySpacingRestrictions
+    WordPress.Arrays.MultipleStatementAlignment
+    WordPress.CodeAnalysis.AssignmentInTernaryCondition
+    WordPress.CodeAnalysis.EscapedNotTranslated
+    WordPress.DateTime.CurrentTimeTimestamp
+    WordPress.DateTime.RestrictedFunctions
+    WordPress.DB.DirectDatabaseQuery
+    WordPress.DB.PreparedSQL
+    WordPress.DB.PreparedSQLPlaceholders
+    WordPress.DB.RestrictedClasses
+    WordPress.DB.RestrictedFunctions
+    WordPress.DB.SlowDBQuery
+    WordPress.NamingConventions.PrefixAllGlobals
+    WordPress.NamingConventions.ValidFunctionName
+    WordPress.NamingConventions.ValidHookName
+    WordPress.NamingConventions.ValidPostTypeSlug
+    WordPress.PHP.DevelopmentFunctions
+    WordPress.PHP.DiscouragedPHPFunctions
+    WordPress.PHP.DontExtract
+    WordPress.PHP.IniSet
+    WordPress.PHP.NoSilencedErrors
+    WordPress.PHP.POSIXFunctions
+    WordPress.PHP.PregQuoteDelimiter
+    WordPress.PHP.StrictInArray
+    WordPress.PHP.TypeCasts
+    WordPress.Security.EscapeOutput
+    WordPress.Security.NonceVerification
+    WordPress.Security.PluginMenuSlug
+    WordPress.Security.SafeRedirect
+    WordPress.Security.ValidatedSanitizedInput
+    WordPress.Utils.I18nTextDomainFixer
+    WordPress.WhiteSpace.CastStructureSpacing
+    WordPress.WhiteSpace.ControlStructureSpacing
+    WordPress.WhiteSpace.ObjectOperatorSpacing
+    WordPress.WhiteSpace.OperatorSpacing
+    WordPress.WP.AlternativeFunctions
+    WordPress.WP.Capabilities
+    WordPress.WP.CapitalPDangit
+    WordPress.WP.ClassNameCase
+    WordPress.WP.CronInterval
+    WordPress.WP.DeprecatedClasses
+    WordPress.WP.DeprecatedFunctions
+    WordPress.WP.DeprecatedParameters
+    WordPress.WP.DeprecatedParameterValues
+    WordPress.WP.DiscouragedConstants
+    WordPress.WP.DiscouragedFunctions
+    WordPress.WP.EnqueuedResourceParameters
+    WordPress.WP.EnqueuedResources
+    WordPress.WP.GlobalVariablesOverride
+    WordPress.WP.I18n
+    WordPress.WP.PostsPerPage
