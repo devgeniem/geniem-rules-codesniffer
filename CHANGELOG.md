@@ -5,6 +5,8 @@ in reverse chronological order by release.
 
 ## Unreleased
 
+## 1.4.0 - 2024-08-05
+
 ### Changed
 
 - Migrate to WPCS 3.x and fix incompatibilities. See https://github.com/WordPress/WordPress-Coding-Standards/wiki/Upgrade-Guide-to-WordPressCS-3.0.0-for-ruleset-maintainers.
