@@ -1,16 +1,18 @@
 
-The Geniem standard contains 262 sniffs
+The Geniem standard contains 303 sniffs
 
-Generic (45 sniffs)
+Generic (50 sniffs)
 -------------------
     Generic.Arrays.DisallowLongArraySyntax
-    Generic.Arrays.DisallowShortArraySyntax
     Generic.Classes.DuplicateClassName
     Generic.Classes.OpeningBraceSameLine
+    Generic.CodeAnalysis.AssignmentInCondition
+    Generic.CodeAnalysis.EmptyPHPStatement
     Generic.CodeAnalysis.EmptyStatement
     Generic.CodeAnalysis.ForLoopShouldBeWhileLoop
     Generic.CodeAnalysis.ForLoopWithTestFunctionCall
     Generic.CodeAnalysis.JumbledIncrementer
+    Generic.CodeAnalysis.RequireExplicitBooleanOperatorPrecedence
     Generic.CodeAnalysis.UnconditionalIfStatement
     Generic.CodeAnalysis.UnnecessaryFinalModifier
     Generic.CodeAnalysis.UnusedFunctionParameter
@@ -19,7 +21,6 @@ Generic (45 sniffs)
     Generic.Commenting.Todo
     Generic.ControlStructures.InlineControlStructure
     Generic.Files.ByteOrderMark
-    Generic.Files.EndFileNewline
     Generic.Files.LineEndings
     Generic.Files.LineLength
     Generic.Files.OneObjectStructurePerFile
@@ -45,13 +46,26 @@ Generic (45 sniffs)
     Generic.PHP.NoSilencedErrors
     Generic.PHP.Syntax
     Generic.Strings.UnnecessaryStringConcat
+    Generic.VersionControl.GitMergeConflict
     Generic.WhiteSpace.ArbitraryParenthesesSpacing
     Generic.WhiteSpace.DisallowSpaceIndent
+    Generic.WhiteSpace.IncrementDecrementSpacing
+    Generic.WhiteSpace.LanguageConstructSpacing
     Generic.WhiteSpace.ScopeIndent
+    Generic.WhiteSpace.SpreadOperatorSpacingAfter
 
 Geniem (1 sniff)
 ----------------
     Geniem.ControlStructures.ElseCatchNewline
+
+Modernize (1 sniff)
+-------------------
+    Modernize.FunctionCalls.Dirname
+
+NormalizedArrays (2 sniffs)
+---------------------------
+    NormalizedArrays.Arrays.ArrayBraceSpacing
+    NormalizedArrays.Arrays.CommaAfterLast
 
 PEAR (4 sniffs)
 ---------------
@@ -180,21 +194,28 @@ PHPCompatibility (117 sniffs)
     PHPCompatibility.Variables.NewUniformVariableSyntax
     PHPCompatibility.Variables.RemovedPredefinedGlobalVariables
 
-PSR2 (7 sniffs)
+PSR2 (9 sniffs)
 ---------------
+    PSR2.Classes.ClassDeclaration
     PSR2.Classes.PropertyDeclaration
     PSR2.ControlStructures.ElseIfDeclaration
     PSR2.ControlStructures.SwitchDeclaration
     PSR2.Files.ClosingTag
+    PSR2.Files.EndFileNewline
     PSR2.Methods.FunctionClosingBrace
     PSR2.Methods.MethodDeclaration
     PSR2.Namespaces.NamespaceDeclaration
 
-PSR12 (1 sniff)
----------------
+PSR12 (6 sniffs)
+----------------
+    PSR12.Classes.ClassInstantiation
+    PSR12.Files.FileHeader
+    PSR12.Functions.NullableTypeDeclaration
+    PSR12.Functions.ReturnTypeDeclaration
     PSR12.Keywords.ShortFormTypeKeywords
+    PSR12.Traits.UseDeclaration
 
-Squiz (29 sniffs)
+Squiz (28 sniffs)
 -----------------
     Squiz.Classes.SelfMemberReference
     Squiz.Commenting.BlockComment
@@ -208,6 +229,7 @@ Squiz (29 sniffs)
     Squiz.Commenting.VariableComment
     Squiz.Functions.FunctionDeclarationArgumentSpacing
     Squiz.Functions.FunctionDuplicateArgument
+    Squiz.Functions.MultiLineFunctionDeclaration
     Squiz.Operators.IncrementDecrementUsage
     Squiz.Operators.ValidLogicalOperators
     Squiz.PHP.CommentedOutCode
@@ -220,22 +242,52 @@ Squiz (29 sniffs)
     Squiz.Strings.ConcatenationSpacing
     Squiz.Strings.DoubleQuoteUsage
     Squiz.WhiteSpace.CastSpacing
-    Squiz.WhiteSpace.LanguageConstructSpacing
-    Squiz.WhiteSpace.ObjectOperatorSpacing
     Squiz.WhiteSpace.ScopeKeywordSpacing
     Squiz.WhiteSpace.SemicolonSpacing
     Squiz.WhiteSpace.SuperfluousWhitespace
 
-WordPress (58 sniffs)
+Universal (32 sniffs)
+---------------------
+    Universal.Arrays.DisallowShortArraySyntax
+    Universal.Arrays.DuplicateArrayKey
+    Universal.Classes.ModifierKeywordOrder
+    Universal.Classes.RequireAnonClassParentheses
+    Universal.CodeAnalysis.ConstructorDestructorReturn
+    Universal.CodeAnalysis.ForeachUniqueAssignment
+    Universal.CodeAnalysis.NoDoubleNegative
+    Universal.CodeAnalysis.NoEchoSprintf
+    Universal.CodeAnalysis.StaticInFinalClass
+    Universal.Constants.LowercaseClassResolutionKeyword
+    Universal.Constants.ModifierKeywordOrder
+    Universal.Constants.UppercaseMagicConstants
+    Universal.ControlStructures.DisallowLonelyIf
+    Universal.Files.SeparateFunctionsFromOO
+    Universal.Namespaces.DisallowCurlyBraceSyntax
+    Universal.Namespaces.DisallowDeclarationWithoutName
+    Universal.Namespaces.OneDeclarationPerFile
+    Universal.NamingConventions.NoReservedKeywordParameterNames
+    Universal.Operators.DisallowShortTernary
+    Universal.Operators.DisallowStandalonePostIncrementDecrement
+    Universal.Operators.StrictComparisons
+    Universal.Operators.TypeSeparatorSpacing
+    Universal.PHP.LowercasePHPTag
+    Universal.UseStatements.DisallowMixedGroupUse
+    Universal.UseStatements.KeywordSpacing
+    Universal.UseStatements.LowercaseFunctionConst
+    Universal.UseStatements.NoLeadingBackslash
+    Universal.UseStatements.NoUselessAliases
+    Universal.WhiteSpace.AnonClassKeywordSpacing
+    Universal.WhiteSpace.CommaSpacing
+    Universal.WhiteSpace.DisallowInlineTabs
+    Universal.WhiteSpace.PrecisionAlignment
+
+WordPress (53 sniffs)
 ---------------------
     WordPress.Arrays.ArrayDeclarationSpacing
     WordPress.Arrays.ArrayIndentation
     WordPress.Arrays.ArrayKeySpacingRestrictions
-    WordPress.Arrays.CommaAfterArrayItem
     WordPress.Arrays.MultipleStatementAlignment
-    WordPress.Classes.ClassInstantiation
-    WordPress.CodeAnalysis.AssignmentInCondition
-    WordPress.CodeAnalysis.EmptyStatement
+    WordPress.CodeAnalysis.AssignmentInTernaryCondition
     WordPress.CodeAnalysis.EscapedNotTranslated
     WordPress.DateTime.CurrentTimeTimestamp
     WordPress.DateTime.RestrictedFunctions
@@ -250,14 +302,12 @@ WordPress (58 sniffs)
     WordPress.NamingConventions.ValidHookName
     WordPress.NamingConventions.ValidPostTypeSlug
     WordPress.PHP.DevelopmentFunctions
-    WordPress.PHP.DisallowShortTernary
     WordPress.PHP.DiscouragedPHPFunctions
     WordPress.PHP.DontExtract
     WordPress.PHP.IniSet
     WordPress.PHP.NoSilencedErrors
     WordPress.PHP.POSIXFunctions
     WordPress.PHP.PregQuoteDelimiter
-    WordPress.PHP.StrictComparisons
     WordPress.PHP.StrictInArray
     WordPress.PHP.TypeCasts
     WordPress.Security.EscapeOutput
@@ -268,11 +318,12 @@ WordPress (58 sniffs)
     WordPress.Utils.I18nTextDomainFixer
     WordPress.WhiteSpace.CastStructureSpacing
     WordPress.WhiteSpace.ControlStructureSpacing
-    WordPress.WhiteSpace.DisallowInlineTabs
+    WordPress.WhiteSpace.ObjectOperatorSpacing
     WordPress.WhiteSpace.OperatorSpacing
-    WordPress.WhiteSpace.PrecisionAlignment
     WordPress.WP.AlternativeFunctions
+    WordPress.WP.Capabilities
     WordPress.WP.CapitalPDangit
+    WordPress.WP.ClassNameCase
     WordPress.WP.CronInterval
     WordPress.WP.DeprecatedClasses
     WordPress.WP.DeprecatedFunctions
@@ -285,4 +336,3 @@ WordPress (58 sniffs)
     WordPress.WP.GlobalVariablesOverride
     WordPress.WP.I18n
     WordPress.WP.PostsPerPage
-    WordPress.WP.TimezoneChange

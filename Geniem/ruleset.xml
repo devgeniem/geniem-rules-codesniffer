@@ -107,8 +107,8 @@
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 
     <!-- Allow short array syntax -->
-    <rule ref="Generic.Arrays.DisallowShortArraySyntax.Found">
-        <exclude name="Generic.Arrays.DisallowShortArraySyntax.Found"/>
+    <rule ref="Universal.Arrays.DisallowShortArraySyntax.Found">
+        <exclude name="Universal.Arrays.DisallowShortArraySyntax.Found"/>
     </rule>
 
     <rule ref="PSR2.Methods.FunctionClosingBrace">
@@ -172,9 +172,6 @@
     <!-- No spaces before comma in function calls -->
     <!-- This might be problematic when using wp actions/filters -->
     <rule ref="Generic.Functions.FunctionCallArgumentSpacing.SpaceBeforeComma"/>
-
-    <!-- Disallow array() in favour of [] -->
-    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 
     <!--
       Ending tags '?>' can be really painful to debug.
@@ -240,7 +237,7 @@
         <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
 
         <!-- ?:-P -->
-        <exclude name="WordPress.PHP.DisallowShortTernary.Found"/>
+        <exclude name="Universal.Operators.DisallowShortTernary.Found"/>
 
         <exclude name="WordPress.DateTime.RestrictedFunctions.date_date" />
 
@@ -268,9 +265,11 @@
     </rule>
 
     <!-- Allow dynamic indentation amounts when row starts with an object assignation arrow -->
-    <rule ref="WordPress.WhiteSpace.PrecisionAlignment">
+    <rule ref="Universal.WhiteSpace.PrecisionAlignment">
         <properties>
-            <property name="ignoreAlignmentTokens" type="array" value="T_OBJECT_OPERATOR"/>
+            <property name="ignoreAlignmentBefore" type="array">
+                <element value="T_OBJECT_OPERATOR" />
+            </property>
         </properties>
     </rule>
 
