@@ -28,7 +28,7 @@
     <exclude-pattern>*/tests/*</exclude-pattern>
 
     <!-- Skip seed data -->
-    <exclude-pattern>*/data/*</exclude-pattern>
+    <exclude-pattern type="relative">*/data/*</exclude-pattern>
 
     <!-- Skip phinx seeds/migrations -->
     <exclude-pattern>db/seeds/</exclude-pattern>

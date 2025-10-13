@@ -5,6 +5,12 @@ in reverse chronological order by release.
 
 ## Unreleased
 
+## 1.5.0 - 2024-10-13
+
+### Changed
+
+- Add type relative attribute to ruleset.xml to fix Seravo setup PHPCS.
+
 ## 1.4.0 - 2024-08-05
 
 ### Changed
@@ -44,7 +50,6 @@ in reverse chronological order by release.
 ### Removed
 
 - Removed rule: Squiz.Commenting.FileComment
-
 
 ## 1.2.2 - 2021-12-31
 
