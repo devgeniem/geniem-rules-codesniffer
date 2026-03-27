@@ -2,7 +2,7 @@
 <ruleset name="Geniem"
          namespace="Geniem\Sniffs"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+         xsi:noNamespaceSchemaLocation="https://schema.phpcodesniffer.com/phpcs.xsd">
     <description>A custom set of rules to check styles for a Geniem WP projects</description>
 
     <!-- Exclude Composer vendor directory. -->
